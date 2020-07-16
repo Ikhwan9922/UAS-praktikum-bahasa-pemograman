@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+void prototypeFunction ();
+float total_harga;
+float total_pembayaran;
+float diskon;
+
+int main()
+ {
+	prototypeFunction ();
+}
+void prototypeFunction ()
+{
+
+cout << " M. Ikhwan Hafid"<<endl;
+cout << " ETE10190104 " <<endl;
+cout << " UAS Praktikum Bahasa Pemograman " <<endl;
+cout << "========================================"<<endl;
+    
+cout << " Total Pembelian :";
+cin >> total_harga;
+    if (total_harga>500000){
+        cout <<" mendapat diskon 10 %"<<endl;
+        diskon=total_harga*0.1;
+    }else{
+        cout <<" mendapat diskon 5 %"<<endl;
+        diskon=total_harga*0.05;
+    }
+        total_pembayaran=total_harga-diskon;
+        
+cout << " jadi total yang harus di bayarkan = "<<total_pembayaran;
+    
+    
+}
